@@ -1,0 +1,19 @@
+{
+  "name": "mongo-news-scraper",
+  "version": "1.0.0",
+  "description": "A news web-scraping app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KJKirchgesler/mongo-news-scraper.git"
+  },
+  "author": "Kristen Kirchgesler",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KJKirchgesler/mongo-news-scraper/issues"
+  },
+  "homepage": "https://github.com/KJKirchgesler/mongo-news-scraper#readme"
+}
