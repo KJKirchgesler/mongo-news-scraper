@@ -6,7 +6,7 @@ const request = require("request"); // Makes http calls
 const cheerio = require("cheerio"); // Tool to scrape websites
 
 // Require all models
-//const db = require("./models");
+const db = require("./models");
 
 // Port configuration for localhost and Heroku
 const PORT = process.env.PORT || 8080;
@@ -26,8 +26,8 @@ app.set("view engine", "handlebars");
 app.use(express.static("public"));
 
 // Controllers
-// const router = require("./controllers/api.js");
-// app.use(router);
+const router = require("./controller/routes.js");
+app.use(router);
 
 // Connect to the Mongo DB
 const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/mongoHeadlines";
